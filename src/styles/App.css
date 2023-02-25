@@ -63,6 +63,7 @@
 
 .opensea-button {
   background-color: rgb(32, 129, 226);
+  margin-bottom: 20px;
 }
 
 .mint-count {
@@ -71,11 +72,32 @@
   font-weight: bold;
 }
 
+.loading-text{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 60px;
+  animation: blink 4s ease infinite;
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 30px;
   padding-bottom: 30px;
+}
+.opensea-link{
+  display: flex;
+  align-items: center;
+}
+.opensea-logo{
+  width: 28px;
+  height: 28px;
+  margin-right: 6px;
+}
+.twitter-link{
+  display: flex;
+  align-items: center;
 }
 
 .twitter-logo {
@@ -121,5 +143,17 @@
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
